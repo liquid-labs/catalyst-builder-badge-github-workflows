@@ -1,0 +1,4 @@
+{
+  "name": "@acme/fleeflop",
+  "repository": "git+ssh://github.com/acme/fleeflop"
+}

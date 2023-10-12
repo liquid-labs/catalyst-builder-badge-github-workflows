@@ -1,17 +1,54 @@
 {
-  "name": "@liquid-labs/catalyst-builder-github-workflow-badges",
+  "name": "@liquid-labs/catalyst-builder-badge-github-workflows",
   "version": "1.0.0-alpha.0",
-  "description": "",
-  "main": "dist/catalyst-builder-github-workflow-badges.js",
+  "description": "A catalyst plugin for adding GitHub Workflaw status badges to your README.md.",
+  "main": "dist/catalyst-builder-badge-github-workflows.js",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "make",
+    "lint": "make lint",
+    "lint:fix": "make lint-fix",
+    "test": "make test",
+    "prepack": "make build",
+    "preversion": "make test && make lint",
+    "qa": "make qa"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [],
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
   "license": "UNLICENSED",
-  "repository": "git+ssh://git@github.com/liquid-labs/catalyst-builder-github-workflow-badges.git",
-  "bugs": {
-    "url": "https://github.com/liquid-labs/catalyst-builder-github-workflow-badges/issues"
+  "repository": {
+    "url": "git+ssh://git@github.com/liquid-labs/catalyst-builder-badge-github-workflows.git",
+    "type": "git"
   },
-  "homepage": "https://github.com/liquid-labs/catalyst-builder-github-workflow-badges#readme"
+  "bugs": {
+    "url": "https://github.com/liquid-labs/catalyst-builder-badge-github-workflows/issues"
+  },
+  "homepage": "https://github.com/liquid-labs/catalyst-builder-badge-github-workflows#readme",
+  "devDependencies": {
+    "@liquid-labs/catalyst-resource-babel-and-rollup": "^1.0.0-alpha.3",
+    "@liquid-labs/catalyst-resource-eslint": "^1.0.0-alpha.1",
+    "@liquid-labs/catalyst-resource-jest": "^1.0.0-alpha.3"
+  },
+  "dependencies": {
+    "@liquid-labs/catalyst-lib-badges": "^1.0.0-alpha.1",
+    "@liquid-labs/catalyst-lib-build": "^1.0.0-alpha.11",
+    "@liquid-labs/github-toolkit": "^1.0.0-alpha.14",
+    "@liquid-labs/http-smart-response": "^1.0.0-alpha.3",
+    "http-errors": "^2.0.0"
+  },
+  "catalyst": {
+    "rollupConfig": {
+      "commonjsConfig": {
+        "dynamicRequireTargets": [
+          "node_modules/shelljs/src/*.js"
+        ]
+      }
+    }
+  }
 }
