@@ -34,9 +34,9 @@ describe('setupPassing', () => {
   test("workflowMatchers ['unit-tests/1','fubar/2'] (no 'fubar') throws when 'require' is true", async() => {
     try {
       await setupPassing(Object.assign(
-        {}, 
-        testOptions, 
-        { require: true, workflowMatchers : ['unit-tests/1', 'fubar/2'] })
+        {},
+        testOptions,
+        { require : true, workflowMatchers : ['unit-tests/1', 'fubar/2'] })
       )
       throw new Error('setupPassing failed to throw when requried worflows missing')
     }
