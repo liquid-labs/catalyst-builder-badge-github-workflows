@@ -33,6 +33,6 @@ describe('PUT:badges/github-workflow/add', () => {
 
     expect(existsSync(fsPath.join(testPkgPath, '.catalyst-data.yaml'))).toBe(true)
     const resultJSON = JSON.parse(result)
-    expect(resultJSON.scripts).toHaveLength(1)
+    expect(resultJSON.artifacts).toHaveLength(1)
   })
 })
