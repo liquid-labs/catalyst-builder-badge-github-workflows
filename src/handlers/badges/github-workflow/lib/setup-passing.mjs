@@ -48,7 +48,7 @@ const setupPassing = async({ config, myName, myVersion, require, workflowMatcher
               builder : myName,
               version : myVersion,
               priority,
-              content: badgeLine,
+              content : badgeLine,
               purpose : `Display status of '${name}' GitHub Workflow.`,
               config
             }
