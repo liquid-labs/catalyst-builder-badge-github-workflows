@@ -19,16 +19,16 @@ describe('setupPassing', () => {
     const result = await setupPassing(testOptions)
 
     expect(result).toHaveLength(1)
-    expect(result[0].scripts).toHaveLength(1)
-    expect(result[0].scripts[0].badgeLine).toMatch('Unit tests') // from the workflow yaml 'name' field
+    expect(result[0].artifacts).toHaveLength(1)
+    expect(result[0].artifacts[0].content).toMatch('Unit tests') // from the workflow yaml 'name' field
   })
 
   test("workflowMatchers ['unit-tests/1','fubar/2'] (no 'fubar') creates a single artifact result", async() => {
     const result = await setupPassing(Object.assign({}, testOptions, { workflowMatchers : ['unit-tests/1', 'fubar/2'] }))
 
     expect(result).toHaveLength(1)
-    expect(result[0].scripts).toHaveLength(1)
-    expect(result[0].scripts[0].badgeLine).toMatch('Unit tests') // from the workflow yaml 'name' field
+    expect(result[0].artifacts).toHaveLength(1)
+    expect(result[0].artifacts[0].content).toMatch('Unit tests') // from the workflow yaml 'name' field
   })
 
   test("workflowMatchers ['unit-tests/1','fubar/2'] (no 'fubar') throws when 'require' is true", async() => {

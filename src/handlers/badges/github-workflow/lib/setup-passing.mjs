@@ -43,12 +43,12 @@ const setupPassing = async({ config, myName, myVersion, require, workflowMatcher
         const badgeLine = `[![${name}](https://github.com/${org}/${project}/actions/workflows/${workflow}/badge.svg)](https://github.com/${org}/${project}/actions/workflows/${workflow})`
 
         acc.push({
-          scripts : [
+          artifacts : [
             {
               builder : myName,
               version : myVersion,
               priority,
-              badgeLine,
+              content : badgeLine,
               purpose : `Display status of '${name}' GitHub Workflow.`,
               config
             }
