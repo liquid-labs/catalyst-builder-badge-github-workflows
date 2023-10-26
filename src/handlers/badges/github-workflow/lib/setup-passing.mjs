@@ -5,7 +5,7 @@ import * as fsPath from 'node:path'
 import createError from 'http-errors'
 import yaml from 'js-yaml'
 
-import { getGitHubOrgAndProject } from '@liquid-labs/github-toolkit'
+import { getGitHubOrgAndProjectBasename } from '@liquid-labs/github-toolkit'
 import { getPackageJSON } from '@liquid-labs/npm-toolkit'
 
 const setupPassing = async({ config, myName, myVersion, require, workflowMatchers, workingPkgRoot }) => {
@@ -23,7 +23,7 @@ const setupPassing = async({ config, myName, myVersion, require, workflowMatcher
   }
 
   const packageJSON = await getPackageJSON({ pkgDir : workingPkgRoot })
-  const { org, project } = getGitHubOrgAndProject({ packageJSON })
+  const { org, projectBasename } = getGitHubOrgAndProjectBasename({ packageJSON })
 
   try {
     const workflows = await fs.readdir(workflowsPath)
@@ -40,7 +40,7 @@ const setupPassing = async({ config, myName, myVersion, require, workflowMatcher
         const workflowData = yaml.load(workflowContents)
         const { name } = workflowData
 
-        const badgeLine = `[![${name}](https://github.com/${org}/${project}/actions/workflows/${workflow}/badge.svg)](https://github.com/${org}/${project}/actions/workflows/${workflow})`
+        const badgeLine = `[![${name}](https://github.com/${org}/${projectBasename}/actions/workflows/${workflow}/badge.svg)](https://github.com/${org}/${projectBasename}/actions/workflows/${workflow})`
 
         acc.push({
           artifacts : [
