@@ -18,12 +18,12 @@ const parameters = [
   {
     name         : 'workflowMatchers',
     isMultivalue : true,
-    description      : `A set of string of the form '&lt;match string&gt;/&lt;priority&gt;'. 'Match string' is used to match against workflow file names. Matched names will generate badges ordered by 'priority'. Unmatched names are ignored by default. Defaults to ['${defaultWorklowMatchers.join("', '")}' ]. If \`requireWorkflows\` is true, then this will instead result in an error if no matching workflow found.`
+    description  : `A set of string of the form '&lt;match string&gt;/&lt;priority&gt;'. 'Match string' is used to match against workflow file names. Matched names will generate badges ordered by 'priority'. Unmatched names are ignored by default. Defaults to ['${defaultWorklowMatchers.join("', '")}' ]. If \`requireWorkflows\` is true, then this will instead result in an error if no matching workflow found.`
   },
   {
-    name      : 'requireWorkflows',
-    isBoolean : true,
-    description   : 'If a any workflow `workflowID` not found, then an exception is raised.'
+    name        : 'requireWorkflows',
+    isBoolean   : true,
+    description : 'If a any workflow `workflowID` not found, then an exception is raised.'
   }
 ]
 
