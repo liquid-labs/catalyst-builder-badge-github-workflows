@@ -9,7 +9,7 @@ const defaultWorklowMatchers = ['unit-tests/1']
 const help = {
   name        : 'Add github workflow badges',
   summary     : 'Adds github workflow status badges to the target package README.md.',
-  description : ''
+  description : "Generates a GitHub workflow status badge. It will attempt to insert the badge at the top of the package `README.md` just under the title line. The title line is determined by the first line beginning with a single '#'. If there is no `README.md` file, the function will attempt to generate based on the `package.json` settings."
 }
 
 const method = 'put'
@@ -18,12 +18,12 @@ const parameters = [
   {
     name         : 'workflowMatchers',
     isMultivalue : true,
-    summary      : `A set of string of the form '&lt;match string&gt;/&lt;priority&gt;'. 'Match string' is used to match against workflow file names. Matched names will generate badges ordered by 'priority'. Unmatched names are ignored by default. Defaults to ['${defaultWorklowMatchers.join("', '")}' ]. If \`requireWorkflows\` is true, then this will instead result in an error if no matching workflow found.`
+    description  : `A set of string of the form '&lt;match string&gt;/&lt;priority&gt;'. 'Match string' is used to match against workflow file names. Matched names will generate badges ordered by 'priority'. Unmatched names are ignored by default. Defaults to ['${defaultWorklowMatchers.join("', '")}' ]. If \`requireWorkflows\` is true, then this will instead result in an error if no matching workflow found.`
   },
   {
-    name      : 'requireWorkflows',
-    isBoolean : true,
-    summary   : 'If a any workflow `workflowID` not found, then an exception is raised.'
+    name        : 'requireWorkflows',
+    isBoolean   : true,
+    description : 'If a any workflow `workflowID` not found, then an exception is raised.'
   }
 ]
 
