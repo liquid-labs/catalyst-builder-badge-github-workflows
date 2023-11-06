@@ -1,8 +1,8 @@
 {
-  "name": "@liquid-labs/catalyst-builder-badge-github-workflows",
+  "name": "@liquid-labs/catalyst-projects-badges-github-workflows",
   "version": "1.0.0-alpha.0",
   "description": "A catalyst plugin for adding GitHub Workflaw status badges to your README.md.",
-  "main": "dist/catalyst-builder-badge-github-workflows.js",
+  "main": "dist/catalyst-projects-badges-github-workflows.js",
   "files": [
     "dist/",
     "README.md"
@@ -23,13 +23,13 @@
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
   "license": "UNLICENSED",
   "repository": {
-    "url": "git+ssh://git@github.com/liquid-labs/catalyst-builder-badge-github-workflows.git",
+    "url": "git+ssh://git@github.com/liquid-labs/catalyst-projects-badges-github-workflows.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/liquid-labs/catalyst-builder-badge-github-workflows/issues"
+    "url": "https://github.com/liquid-labs/catalyst-projects-badges-github-workflows/issues"
   },
-  "homepage": "https://github.com/liquid-labs/catalyst-builder-badge-github-workflows#readme",
+  "homepage": "https://github.com/liquid-labs/catalyst-projects-badges-github-workflows#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-resource-babel-and-rollup": "^1.0.0-alpha.3",
     "@liquid-labs/catalyst-resource-eslint": "^1.0.0-alpha.1",

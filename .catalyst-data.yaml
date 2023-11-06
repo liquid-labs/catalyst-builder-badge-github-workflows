@@ -40,9 +40,9 @@ workflows:
         - builder: '@liquid-labs/catalyst-builder-node'
           version: 1.0.0-alpha.0
           priority: 50
-          path: make/50-catalyst-builder-badge-github-workflows-js.mk
+          path: make/50-catalyst-projects-badges-github-workflows-js.mk
           purpose: >-
-            Builds the 'dist/catalyst-builder-badge-github-workflows.js'
+            Builds the 'dist/catalyst-projects-badges-github-workflows.js'
             artifact.
         - builder: '@liquid-labs/catalyst-builder-node'
           version: 1.0.0-alpha.0
@@ -73,9 +73,9 @@ badges:
         priority: 0
         content: >-
           [![coverage:
-          95%](./.readme-assets/coverage.svg)](https://github.com/liquid-labs/catalyst-builder-badge-github-workflows/pulls?q=is%3Apr+is%3Aclosed)
+          95%](./.readme-assets/coverage.svg)](https://github.com/liquid-labs/catalyst-projects-badges-github-workflows/pulls?q=is%3Apr+is%3Aclosed)
         path: >-
-          /Users/zane/.liq/playground/liquid-labs/catalyst-builder-badge-github-workflows/.readme-assets/coverage.svg
+          /Users/zane/.liq/playground/liquid-labs/catalyst-projects-badges-github-workflows/.readme-assets/coverage.svg
         purpose: Test coverage badge for README.md.
   github-workflow:
     dependencies: []

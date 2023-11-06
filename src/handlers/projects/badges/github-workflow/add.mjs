@@ -13,7 +13,7 @@ const help = {
 }
 
 const method = 'put'
-const path = ['badges', 'github-workflow', 'add']
+const path = ['projects', 'badges', 'github-workflow', 'add']
 const parameters = [
   {
     name         : 'workflowMatchers',
