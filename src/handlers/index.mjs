@@ -1,1 +1,1 @@
-export * from './badges'
+export * from './projects'
