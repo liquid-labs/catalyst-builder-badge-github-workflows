@@ -1,6 +1,6 @@
 {
   "name": "@liquid-labs/catalyst-projects-badges-github-workflows",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "A catalyst plugin for adding GitHub Workflaw status badges to your README.md.",
   "main": "dist/catalyst-projects-badges-github-workflows.js",
   "files": [
