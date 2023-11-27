@@ -1,6 +1,6 @@
 {
   "name": "@liquid-labs/sdlc-projects-badges-github-workflows",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "A plugable-express plugin for adding GitHub Workflaw status badges to your README.md; part of the SDLCPilot family.",
   "main": "dist/sdlc-projects-badges-github-workflows.js",
   "files": [
