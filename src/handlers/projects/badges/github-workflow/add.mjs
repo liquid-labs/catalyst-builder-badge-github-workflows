@@ -1,6 +1,6 @@
-import { processBadgeBuilders, updateReadme } from '@liquid-labs/catalyst-lib-badges'
-import { gatherBasicBuilderData, processBuilderResults } from '@liquid-labs/catalyst-lib-build'
 import { httpSmartResponse } from '@liquid-labs/http-smart-response'
+import { processBadgeBuilders, updateReadme } from '@liquid-labs/sdlc-lib-badges'
+import { gatherBasicBuilderData, processBuilderResults } from '@liquid-labs/sdlc-lib-build'
 
 import { setupPassing } from './lib/setup-passing'
 

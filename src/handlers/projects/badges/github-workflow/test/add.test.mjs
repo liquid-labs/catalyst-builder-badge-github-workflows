@@ -31,7 +31,7 @@ describe('PUT:badges/github-workflow/add', () => {
     const mockRes = { write : (chunk) => { result += chunk }, end : () => {}, type : () => {} }
     await handler(reqMock, mockRes)
 
-    expect(existsSync(fsPath.join(testPkgPath, '.catalyst-data.yaml'))).toBe(true)
+    expect(existsSync(fsPath.join(testPkgPath, '.sdlc-data.yaml'))).toBe(true)
     const resultJSON = JSON.parse(result)
     expect(resultJSON.artifacts).toHaveLength(1)
   })

@@ -1,8 +1,8 @@
 {
-  "name": "@liquid-labs/catalyst-projects-badges-github-workflows",
+  "name": "@liquid-labs/sdlc-projects-badges-github-workflows",
   "version": "1.0.0-alpha.1",
-  "description": "A catalyst plugin for adding GitHub Workflaw status badges to your README.md.",
-  "main": "dist/catalyst-projects-badges-github-workflows.js",
+  "description": "A plugable-express plugin for adding GitHub Workflaw status badges to your README.md; part of the SDLCPilot family.",
+  "main": "dist/sdlc-projects-badges-github-workflows.js",
   "files": [
     "dist/",
     "README.md"
@@ -23,23 +23,23 @@
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
   "license": "UNLICENSED",
   "repository": {
-    "url": "git+ssh://git@github.com/liquid-labs/catalyst-projects-badges-github-workflows.git",
+    "url": "git+ssh://git@github.com/liquid-labs/sdlc-projects-badges-github-workflows.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/liquid-labs/catalyst-projects-badges-github-workflows/issues"
+    "url": "https://github.com/liquid-labs/sdlc-projects-badges-github-workflows/issues"
   },
-  "homepage": "https://github.com/liquid-labs/catalyst-projects-badges-github-workflows#readme",
+  "homepage": "https://github.com/liquid-labs/sdlc-projects-badges-github-workflows#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-resource-babel-and-rollup": "^1.0.0-alpha.3",
     "@liquid-labs/catalyst-resource-eslint": "^1.0.0-alpha.1",
     "@liquid-labs/catalyst-resource-jest": "^1.0.0-alpha.3"
   },
   "dependencies": {
-    "@liquid-labs/catalyst-lib-badges": "^1.0.0-alpha.3",
-    "@liquid-labs/catalyst-lib-build": "^1.0.0-alpha.11",
     "@liquid-labs/github-toolkit": "^1.0.0-alpha.16",
     "@liquid-labs/http-smart-response": "^1.0.0-alpha.3",
+    "@liquid-labs/sdlc-lib-badges": "^1.0.0-alpha.6",
+    "@liquid-labs/sdlc-lib-build": "^1.0.0-alpha.14",
     "http-errors": "^2.0.0"
   },
   "catalyst": {

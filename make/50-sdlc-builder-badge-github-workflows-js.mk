@@ -2,10 +2,10 @@
 # https://npmjs.com/package/@liquid-labs/catalyst-builder-node for further details
 
 #####
-# build dist/catalyst-projects-badges-github-workflows.js
+# build dist/sdlc-projects-badges-github-workflows.js
 #####
 
-CATALYST_CATALYST_BUILDER_BADGE_GITHUB_WORKFLOWS_JS:=$(DIST)/catalyst-projects-badges-github-workflows.js
+CATALYST_CATALYST_BUILDER_BADGE_GITHUB_WORKFLOWS_JS:=$(DIST)/sdlc-projects-badges-github-workflows.js
 CATALYST_CATALYST_BUILDER_BADGE_GITHUB_WORKFLOWS_JS_ENTRY=$(SRC)/index.mjs
 BUILD_TARGETS+=$(CATALYST_CATALYST_BUILDER_BADGE_GITHUB_WORKFLOWS_JS)
 
@@ -15,5 +15,5 @@ $(CATALYST_CATALYST_BUILDER_BADGE_GITHUB_WORKFLOWS_JS): package.json $(CATALYST_
 	  $(CATALYST_ROLLUP) --config $(CATALYST_ROLLUP_CONFIG)
 
 #####
-# end dist/catalyst-projects-badges-github-workflows.js
+# end dist/sdlc-projects-badges-github-workflows.js
 #####
