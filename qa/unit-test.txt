@@ -1,0 +1,20 @@
+Test git rev: db312c3e3b720c93241737e8a2cc6c2414a1d44a
+(node:94168) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS handlers/projects/badges/github-workflow/test/add.test.js
+PASS handlers/projects/badges/github-workflow/lib/test/setup-passing.test.js
+---------------------|---------|----------|---------|---------|-------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------|---------|----------|---------|---------|-------------------
+All files            |   94.91 |    83.33 |     100 |   94.64 |                   
+ github-workflow     |     100 |      100 |     100 |     100 |                   
+  add.mjs            |     100 |      100 |     100 |     100 |                   
+ github-workflow/lib |    92.1 |       80 |     100 |   91.66 |                   
+  setup-passing.mjs  |    92.1 |       80 |     100 |   91.66 | 22,65-66          
+---------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 2 passed, 2 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.26 s, estimated 1 s
+Ran all test suites.
